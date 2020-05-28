@@ -1,5 +1,8 @@
 # antf
 
+[https://www.netlifycms.org/docs/nuxt/] NetlifyCMS
+
+
 > My magnificent Nuxt.js project
 
 ## Build Setup
