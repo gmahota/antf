@@ -14,5 +14,7 @@
     "@nuxtjs/markdownit": "^1.2.9",
     "nuxt": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.2"
+  }
 }

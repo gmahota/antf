@@ -1,13 +1,30 @@
 <template>
-  <div>
-    <nuxt />
+  <div id="appRoot">
+    <v-app id="inspire" class="app">
+      <app-toolbar class="app--toolbar"></app-toolbar>
+      <nuxt />
+      <app-footer></app-footer>
+    </v-app>
   </div>
 </template>
+<script>
+import AppToolbar from "@/components/core/AppToolbar";
+import AppFab from "@/components/core/AppFab";
+import AppFooter from "@/components/core/AppFooter";
+
+export default {
+  components: {
+    AppToolbar,
+    AppFab,
+    AppFooter
+  }
+};
+</script>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
