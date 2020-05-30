@@ -26,7 +26,7 @@ export default {
     KeepInTouch: () => import("@/components/sections/KeepInTouch"),
     Newsletter: () => import("@/components/sections/Newsletter"),
     ProFeatures: () => import("@/components/sections/ProFeatures"),
-    Info: () => import("@/components/sections/info")
+    Info: () => import("@/components/sections/Info")
   }
 };
 </script>
