@@ -11,7 +11,7 @@
     <!-- <social-media />, -->
     <keep-in-touch />
     
-    <pro-features />
+    <!-- <pro-features /> -->
     <info />,
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <base-info-card title="Features">
+  <base-info-card title="Cursos">
     <a
       v-for="feature in features"
       :key="feature"
@@ -17,11 +17,11 @@
 
     data: () => ({
       features: [
-        'Zero Installation',
-        'Easy Customization',
-        'User Friendly Design',
-        '24/7 Support Desk',
-        'SEO Optimized',
+        'Nivel 1',
+        'Nivel 2',
+        'Nivel 3',
+        'Nivel 4',
+        'Avançado',
       ],
     }),
   }
