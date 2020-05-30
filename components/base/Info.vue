@@ -2,6 +2,19 @@
   <v-theme-provider :dark="dark">
     <div>
       <base-img
+        :src="require('@/assets/logo1.png')"
+        contain
+        max-width="128"
+        min-height="90"
+        width="100%"
+      />
+      <!-- <base-title
+        size="body-1"
+        space="4"
+        title="ASSOCIAÇÃO NACIONAL DE TREINADORES DE FUTEBOL"
+        weight="regular"
+      /> -->
+      <!-- <base-img
         :src="require('@/assets/zero-logo-dark.svg')"
         contain
         max-width="128"
@@ -14,7 +27,7 @@
         space="4"
         title="MULTI-PURPOSE THEME"
         weight="regular"
-      />
+      /> -->
 
       <base-body>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo pariatur quidem, quis modi iure nihil commodi suscipit, corporis dicta adipisci, voluptatum quia cupiditate. Nulla minus voluptatum nostrum deleniti, asperiores facere.

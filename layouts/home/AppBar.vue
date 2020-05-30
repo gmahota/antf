@@ -55,7 +55,7 @@ export default {
 
   data: () => ({
     drawer: null,
-    items: ["Home", "About", "Contact", "Pro"]
+    items: ["Antf","Treinadores", "Cursos", "Contactos", "Perguntas Frequentes"]
   })
 };
 </script>
