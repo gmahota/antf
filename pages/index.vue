@@ -2,13 +2,16 @@
   <div>
     <hero />
     <theme-features />
-    <features />,
-    <contact-us />',
-    <affiliates />,
-    <social-media />,
-    <keep-in-touch />,
-    <newsletter />,
-    <pro-features />,
+    <features />
+    <contact-us />
+    <affiliates />
+
+    <Features-Cursos/>
+    <newsletter />
+    <!-- <social-media />, -->
+    <keep-in-touch />
+    
+    <pro-features />
     <info />,
   </div>
 </template>
@@ -21,6 +24,8 @@ export default {
     ThemeFeatures: () => import("@/components/sections/ThemeFeatures"),
     ContactUs: () => import("@/components/sections/ContactUs"),
     Affiliates: () => import("@/components/sections/Affiliates"),
+    FeaturesCursos: () => import("@/components/sections/FeaturesCursos"),
+
     SocialMedia: () => import("@/components/sections/SocialMedia"),
     
     KeepInTouch: () => import("@/components/sections/KeepInTouch"),
