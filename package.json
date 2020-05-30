@@ -12,9 +12,11 @@
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.9",
-    "nuxt": "^2.0.0"
+    "@vuetify/vue-cli-plugin-preset-base": "^0.3.2",
+    "nuxt": "^2.12.2"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.11.2"
+    "@nuxtjs/vuetify": "^1.11.2",
+    "lodash": "^4.17.15"
   }
 }

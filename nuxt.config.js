@@ -28,17 +28,22 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src:'~/plugins/base', mode: "client"}
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/vuetify',
+    ['@nuxtjs/vuetify'], 
+    
   ],
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/markdownit'],
+  modules: [
+    ['@nuxtjs/markdownit'],
+    ['@vuetify/vue-cli-plugin-preset-base']
+  ],
   markdownit: {
     injected: true,
   },
@@ -54,7 +59,7 @@ export default {
   },
 
   generate: {
-    routes: function() {
+    routes: function () {
       const fs = require('fs');
       const path = require('path');
       return fs.readdirSync('./assets/content/blog').map(file => {
