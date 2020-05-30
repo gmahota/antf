@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2f50f98-af0c-4927-98b1-3e8a47014714/deploy-status)](https://app.netlify.com/sites/antf/deploys)
+
 # antf
 
 [https://www.netlifycms.org/docs/nuxt/] NetlifyCMS
