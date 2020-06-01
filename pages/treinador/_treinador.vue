@@ -25,7 +25,7 @@
                 <v-container>
                   <v-layout row>
                     <v-flex md3>
-                      <v-avatar  tile  slot="offset" class="mx-auto d-block" size="200">
+                      <v-avatar slot="offset" class="mx-auto d-block" size="150">
                         <img :src="model.avatar" />
                       </v-avatar>
                     </v-flex>
@@ -97,29 +97,7 @@ import {
 export default {
   layout: "home",
   data: () => ({
-    model: {
-      uuid: "65a6eb21-67b5-45c3-9af7-faca2d9b60d4",
-      name: "Horácio Gonçalves",
-      email: "Horacio98@gmail.com",
-      username: "Dessie79",
-      jobTitle: "Treinador",
-      phone: "849525156",
-      avatar: require("@/assets/avatar/a1.jpg"),
-      address: {
-        street: "655 Archibald Groves",
-        suite: "Apt. 818",
-        city: "Carlosshire",
-        state: "Arkansas",
-        country: "Somalia",
-        zipcode: "10406",
-        geo: {
-          lat: "-44.6063",
-          lng: "-169.7706"
-        }
-      },
-      team: "Costa do Sol",
-      nivel: "1"
-    },
+    model: null,
     project: null,
     invoices: [{}],
     tasks: [{}],
@@ -158,8 +136,7 @@ export default {
     }
   }),
   created() {
-    
-    this.model = getCoachById(this.$router.currentRoute.query["id"]);
-  },
+    this.model = getCoachById(this.$route.params.treinador);
+  }
 };
 </script>
