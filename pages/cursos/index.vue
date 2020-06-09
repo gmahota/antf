@@ -54,15 +54,15 @@ export default {
     cards: [
       {
         title: "Curso de Treinadores",
-        subtitle: "Nivel 1",
+        subtitle: "Treinador - Nivel 1",
         src: require('@/assets/curso1.jpg'),
         flex: 4,
         description: "Random Image",
         showDetails: false
       },
       {
-        title: "Curso de Treinadores",
-        subtitle: "Nivel 4",
+        title: "Exercicos em Casa",
+        subtitle: "Aberto a Todos",
         src: require('@/assets/curso2.jpg'),
         flex: 4,
         description: "House Image",
@@ -78,7 +78,7 @@ export default {
       },
       {
         title: "Formação Arbitros",
-        subtitle: "Iniciados",
+        subtitle: "Arbitros - Iniciados",
         src: require('@/assets/curso4.jpg'),
         flex: 4,
         description: "Plane Image",
