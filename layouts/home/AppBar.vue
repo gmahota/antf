@@ -5,7 +5,7 @@
         :src="require('@/assets/logo1.png')"
         class="mr-3"
         contain
-        max-width="52"
+        max-width="200"
         width="100%"
       />
      
@@ -55,7 +55,7 @@ export default {
 
   data: () => ({
     drawer: null,
-    items: ["Antf","Treinadores", "Cursos", "Contactos", "Perguntas Frequentes"]
+    items: ["Home","Contactos", "Perguntas Frequentes"]
   })
 };
 </script>

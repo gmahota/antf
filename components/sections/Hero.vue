@@ -2,7 +2,7 @@
   <section id="hero">
     <v-img
       :min-height="minHeight"
-      :src="require('@/assets/home-hero.jpg')"
+      :src="require('@/assets/home-hero1.jpg')"
       class="white--text"
       gradient="to right, rgba(5, 11, 31, .8), rgba(5, 11, 31, .8)"
     >
@@ -13,10 +13,10 @@
           max-width="700"
           width="100%"
         >
-          <base-heading title="#COVID-19" />
+          <base-heading title="#Controle de Credito Bancario" />
 
           <base-body>
-            Todos juntos contra o Covid! Fique em casa e acompanhe as nossas ações!
+            Controle de Credito Bancario! Recuperação de Credito!
           </base-body>
 
           <div
@@ -24,10 +24,10 @@
             class="d-flex flex-wrap"
           >
             <base-btn>
-              Nossos Cursos
+              Creditos
             </base-btn>
 
-            <span class="font-weight-bold ml-6 mr-4 my-4">ou</span>
+            <span class="font-weight-bold ml-6 mr-4 my-4">E</span>
 
             <base-btn
               :ripple="false"

@@ -58,18 +58,18 @@ export default {
       return {
         articles: [
           {
-            src: require('@/assets/curso1.jpg'),
-            title: 'Formação Treinadores Nivel 1',
-            text: 'Phasellus lorem enim, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
+            src: require('@/assets/money1.jpeg'),
+            title: 'Credito Bancario',
+            text: 'Analise de risco de credito, luctus ut velit eget, convallis egestas eros. Sed ornare ligula eget tortor tempor, quis porta tellus dictum.',
           },
           {
-            src: require('@/assets/curso2.jpg'),
-            title: 'Live exercicios Caseiros',
-            text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
+            src: require('@/assets/money2.jpeg'),
+            title: 'Recuperação de Credito',
+            text: 'Renegociação de credito e apoio/controle das prestações de credito. Maecenas pretium aliquam feugiat.',
           },
           {
-            src: require('@/assets/curso3.jpg'),
-            title: 'WebBinar - Tatica Avançada ',
+            src: require('@/assets/money3.jpeg'),
+            title: 'Apoi-mos nos seus sonhos',
             text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus.',
           },
         ],

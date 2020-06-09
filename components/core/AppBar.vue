@@ -4,7 +4,7 @@
       
       <img
         :src="require('@/assets/logo1.png')"
-        height="40"
+        height="60"
         :alt="'logo'"
         contain
         max-width="52"
@@ -60,7 +60,7 @@ export default {
 
   data: () => ({
     drawer: null,
-    items: ["Home", "Cursos", "Contactos", "Perguntas Frequentes"]
+    items: ["Home", "Contactos", "Perguntas Frequentes"]
   })
 };
 </script>

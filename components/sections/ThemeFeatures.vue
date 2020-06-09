@@ -1,6 +1,6 @@
 <template>
   <base-section id="theme-features">
-    <base-section-heading title="Associação Nacional de Treinadores de Futebol">
+    <base-section-heading title="Microbanco Confiança, SA">
       Um resumo de quem somos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, in! Asperiores, impedit libero. Veniam rerum saepe unde nihil possimus quibusdam esse accusamus mollitia magni fuga.
     </base-section-heading>
 
@@ -31,11 +31,11 @@
     data: () => ({
       features: [
         {
-          title: 'ANT',
+          title: 'Eficacia',
           icon: 'mdi-fountain-pen-tip',
         },
         {
-          title: 'PALMARÉS',
+          title: 'Acompanhamento',
           icon: 'mdi-cellphone',
         },
         {
@@ -45,15 +45,15 @@
           icon: 'mdi-pencil-box-outline',
         },
         {
-          title: 'POLOS E NÚCLEOS',
+          title: 'Woring With People',
           icon: 'mdi-image-size-select-actual',
         },
         {
-          title: 'GALERIAS',
+          title: 'Credito',
           icon: 'mdi-ice-pop',
         },
         {
-          title: 'CURSOS',
+          title: 'Recuperação Credito',
           icon: 'mdi-help-circle-outline',
         },
       ],

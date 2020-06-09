@@ -3,17 +3,17 @@
     <v-layout justify-center wrap>
       <v-card>
         <v-toolbar flat color="primary" dark>
-          <v-toolbar-title>Dados do Treinador</v-toolbar-title>
+          <v-toolbar-title>Dados do Devedor</v-toolbar-title>
         </v-toolbar>
         <v-tabs horizontal>
           <v-tab>
             <v-icon right>mdi-details</v-icon>Dados Gerais
           </v-tab>
           <v-tab>
-            <v-icon right>mdi-cash-100</v-icon>Cursos
+            <v-icon right>mdi-cash-100</v-icon>Extrato
           </v-tab>
           <v-tab>
-            <v-icon right>mdi-calendar-check-outline</v-icon>Historico
+            <v-icon right>mdi-calendar-check-outline</v-icon>Historico Pagamentos
           </v-tab>
           <v-tab>
             <v-icon right>mdi-calendar-check-outline</v-icon>Outros
@@ -24,13 +24,7 @@
               <v-card-text>
                 <v-container>
                   <v-layout row>
-                    <v-flex md3>
-                      <v-avatar slot="offset" class="mx-auto d-block" size="150">
-                        <img :src="model.avatar" />
-                      </v-avatar>
-                    </v-flex>
-
-                    <v-flex md8>
+                    <v-flex md12>
                       <v-container>
                         <v-layout row>
                           <v-flex xs6>
@@ -53,17 +47,25 @@
                           </v-flex>
                           <v-flex xs6>
                             <v-text-field
-                              label="Equipa"
+                              label="Classificação"
                               prepend-icon="mdi-account-supervisor"
-                              v-model="model.team"
+                              v-model="model.classificacao"
                             ></v-text-field>
                           </v-flex>
 
                           <v-flex xs6>
                             <v-text-field
-                              label="Nível"
+                              label="Prestação"
                               prepend-icon="mdi-account-supervisor"
-                              v-model="model.nivel"
+                              v-model="model.prestacao"
+                            ></v-text-field>
+                          </v-flex>
+
+                          <v-flex xs6>
+                            <v-text-field
+                              label="Saldo"
+                              prepend-icon="mdi-account-supervisor"
+                              v-model="model.saldo"
                             ></v-text-field>
                           </v-flex>
                         </v-layout>
@@ -87,7 +89,7 @@
   </v-container>
 </template>
 <script>
-import { getCoachById } from "@/api/crm/coach";
+import { getDebtorById } from "@/api/crm/debtor";
 import {
   getProjectByCode,
   getProjectInvoices,
@@ -136,7 +138,7 @@ export default {
     }
   }),
   created() {
-    this.model = getCoachById(this.$route.params.treinador);
+    this.model = getDebtorById(this.$route.params.devedor);
   }
 };
 </script>

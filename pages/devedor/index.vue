@@ -1,10 +1,14 @@
 <template>
   <v-card>
     <v-card-title>
-      Treinadores
+      Lista de Devedores
+      
+      
       <v-spacer></v-spacer>
       <v-text-field v-model="search" append-icon="mdi-magnify" label="Pesquisar" single-line hide-details></v-text-field>
-      <v-icon @click="dialog = !dialog" large color="primary">mdi-plus-circle-outline</v-icon>
+      
+      <v-avatar> <v-icon @click="sendSms" large color="primary">mdi-message-alert</v-icon></v-avatar>
+     
       <v-dialog v-model="dialog" max-width="600px">
           <v-card>
             <v-card-title>
@@ -79,7 +83,7 @@
   </v-card>
 </template>
 <script>
-import {Coach} from '@/api/crm/coach'
+import {Debtor} from '@/api/crm/debtor'
 
 export default {
     layout:"home",
@@ -97,14 +101,17 @@ export default {
       { text: "Email", value: "email" },
       { text: "Celular", value: "phone" },
       { text: "Profissão", value: "jobTitle" },
-      { text: "Equipa", value: "team" },
-      { text: "Nível", value: "nivel" },
+      { text: "Prestacao", value: "prestacao" },
+      { text: "Saldo", value: "saldo" },
       { text: "", value: "action", sortable: false }
     ],
   }),
   methods: {
+    sendSms(){
+
+    },
     detailsItem(value){
-      this.$router.push('/treinador/'+value.uuid)
+      this.$router.push('/devedor/'+value.uuid)
     },
     editItem(value){
 
@@ -143,7 +150,7 @@ export default {
 
     async initData() {
       this.loading = !this.loading;
-      this.users = Coach;
+      this.users = Debtor;
       this.loading = !this.loading;
     }
   },
