@@ -25,7 +25,10 @@
                 <v-container>
                   <v-layout row>
                     <v-flex md3>
-                      <v-avatar slot="offset" class="mx-auto d-block" size="150">
+                      <v-avatar class="profile"
+            color="grey"
+            size="164"
+            tile>
                         <img :src="model.avatar" />
                       </v-avatar>
                     </v-flex>
